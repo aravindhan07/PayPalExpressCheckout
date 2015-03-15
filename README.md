@@ -7,7 +7,7 @@ The two scripts powering the web application are
 
 - ###  paypalwebsite
 
-    The script in this webpage lists the products the user can choose from. The script then proceeds to perform a request to call the PayPal server's SetExpressCheckout method. This methode is invoked using the API username, API password and the API signature attached to the facilitator(business account) account. Upon successfull invocation of this method, the script receives the token for the checkout. Upon reception of the token, the user is redirected to login to their buyer's account.
+    The script in this webpage lists the products the user can choose from. The script then proceeds to perform a request to call the PayPal server's SetExpressCheckout method. This method is invoked using the API username, API password and the API signature attached to the facilitator(business account) account. Upon successfull invocation of this method, the script receives the token for the checkout. Upon reception of the token, the user is redirected to login to their buyer's account.
     
     Upon successful authorization from the buyer, the paypal server redirects the user to the SUCCESS_URL which was specified in the call to SetExpressCheckout which also has the payment amount appended to it as a GET parameter. 
     
